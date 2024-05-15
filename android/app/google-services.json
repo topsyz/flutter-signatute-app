@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364099450563",
+    "project_id": "signi-84991",
+    "storage_bucket": "signi-84991.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364099450563:android:f9e4e01b31f37ff06fd476",
+        "android_client_info": {
+          "package_name": "com.example.signio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbHo83dKpaYOyFOhQuixoCv5i3EvcPH2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
