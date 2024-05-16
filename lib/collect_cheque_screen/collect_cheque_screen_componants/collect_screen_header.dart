@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CollectScreenHeader extends StatelessWidget {
   const CollectScreenHeader({
     Key? key,
-    this.userName = "Ahmed Helal",
+    this.userName = "helmy helal",
   }) : super(key: key);
 
   final String userName;

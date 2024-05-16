@@ -10,7 +10,7 @@ const Color inActiveIconColor = Colors.white;
 class InitScreen extends StatefulWidget {
   const InitScreen({super.key});
 
-  static const String routeName='';
+  static const String routeName='/InitScreen';
 
   @override
   State<InitScreen> createState() => _InitScreenState();
@@ -31,7 +31,7 @@ class _InitScreenState extends State<InitScreen> {
     const Center(
       child: Text("soon"),
     ),
-    const ProfileScreen()
+     ProfileScreen()
   ];
 
   @override

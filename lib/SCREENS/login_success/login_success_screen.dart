@@ -20,7 +20,7 @@ class LoginSuccessScreen extends StatelessWidget {
             "assets/images/success.png",
             height: MediaQuery.of(context).size.height * 0.4, //40%
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 5),
           const Text(
             "Login Success",
             style: TextStyle(

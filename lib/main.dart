@@ -7,7 +7,8 @@ import 'package:signio/history/History_screen.dart';
 
 import 'package:signio/theme.dart';
 import 'package:get/get.dart';
-import 'package:signio/routes.dart';
+import 'package:signio/App_pages.dart';
+
 
 import 'init_screen.dart';
 
@@ -33,8 +34,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'The Flutter Way - Template',
       theme: AppTheme.lightTheme(context),
-      initialRoute: SplashScreen.routeName,
-      routes: AppRoutes.routes,
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
     );
   }
 }

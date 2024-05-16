@@ -11,7 +11,6 @@ import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:syncfusion_flutter_signaturepad/signaturepad.dart';
 
 class ViewDocumentController extends GetxController {
-
   final showSignaturePad = false.obs;
 
   Uint8List? signedDocument;

@@ -4,7 +4,7 @@ import 'package:signio/general_home_page/components/categories.dart';
 import 'package:signio/general_home_page/components/home_header.dart';
 import 'package:flutter/material.dart';
 class GeneralHomeScreen extends StatelessWidget {
-  static String routeName = "/home";
+  static String routeName = "/GeneralHomeScreen";
 
   const GeneralHomeScreen({super.key});
   @override

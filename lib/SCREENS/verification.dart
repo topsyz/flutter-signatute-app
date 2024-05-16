@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 
 class Verificatoin extends StatefulWidget {
+  static String routeName = "/Verificatoin";
   const Verificatoin({ Key? key }) : super(key: key);
 
   @override

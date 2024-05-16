@@ -6,7 +6,7 @@ class ViewDocumentBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<ViewDocumentController>(
-      () => ViewDocumentController(),
+          () => ViewDocumentController(),
     );
   }
 }

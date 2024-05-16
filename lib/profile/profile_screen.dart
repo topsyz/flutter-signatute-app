@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'components/profile_menu.dart';
 import 'components/profile_pic.dart';
+import 'package:signio/SCREENS/sign_in/sign_in_screen.dart'; // Import the sign-in screen
 
 class ProfileScreen extends StatelessWidget {
   static String routeName = "/profile";
 
-  const ProfileScreen({super.key});
+  final FirebaseAuth _auth = FirebaseAuth.instance; // Create an instance
+
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
+
+   ProfileScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +50,16 @@ class ProfileScreen extends StatelessWidget {
             ProfileMenu(
               text: "Log Out",
               icon: "assets/icons/Log out.svg",
-              press: () {},
+              press: () async {
+                await signOut();
+                // Navigate to sign-in screen after successful sign-out
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SignInScreen(),
+                  ),
+                );
+              },
             ),
           ],
         ),

@@ -6,7 +6,7 @@ import 'package:signio/models/intro_page_model.dart';
 import 'package:signio/screens/sign_in/sign_in_screen.dart';
 
 class SplashScreen extends StatefulWidget {
-  static String routeName = "/splash";
+  static String routeName = "/splashScreen";
   const SplashScreen({super.key});
 
   @override

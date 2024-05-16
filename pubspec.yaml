@@ -54,6 +54,7 @@ dependencies:
   image_picker:
   js: ^0.7.1
   tflite_flutter: ^0.10.4
+  tflite_v2: ^1.0.0
 
 
 
@@ -87,6 +88,10 @@ flutter:
   assets:
       - assets/images/
       - assets/icons/
+      - assets/pdf/
+      - assets/certificate/
+      - assets/modelai/labels.txt
+      - assets/modelai/model_unquant.tflite
   fonts:
     - family: Muli
       fonts:
