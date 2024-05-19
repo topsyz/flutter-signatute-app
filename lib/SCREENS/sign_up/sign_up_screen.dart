@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signio/components/Already_member_text.dart';
 
-import '../../components/socal_card.dart';
 import '../../constants.dart';
 import 'components/sign_up_form.dart';
 

@@ -4,7 +4,7 @@ import 'icon_btn_with_counter.dart';
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
     Key? key,
-    this.userName = "helmy Helal Hussein",
+    this.userName = "helmy Helal",
   }) : super(key: key);
 
   final String userName;

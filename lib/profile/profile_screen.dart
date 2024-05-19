@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:signio/SCREENS/complete_profile/complete_profile_screen.dart';
 import 'components/profile_menu.dart';
 import 'components/profile_pic.dart';
 import 'package:signio/SCREENS/sign_in/sign_in_screen.dart'; // Import the sign-in screen
@@ -30,7 +31,8 @@ class ProfileScreen extends StatelessWidget {
             ProfileMenu(
               text: "My Account",
               icon: "assets/icons/User Icon.svg",
-              press: () => {},
+              press: () => {Navigator.pushNamed(context, CompleteProfileScreen.routeName)
+              },
             ),
             ProfileMenu(
               text: "Notifications",
@@ -56,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SignInScreen(),
+                    builder: (context) => const SignInScreen(),
                   ),
                 );
               },

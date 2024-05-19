@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SignatureBanner extends StatelessWidget {
-  const SignatureBanner({
+class AddSignBanaar extends StatelessWidget {
+  const AddSignBanaar({
     super.key,
   });
 

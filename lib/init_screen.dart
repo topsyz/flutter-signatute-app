@@ -4,6 +4,7 @@ import 'package:signio/constants.dart';
 import 'package:signio/history/History_screen.dart';
 import 'package:signio/general_home_page/general_home.dart';
 import 'package:signio/profile/profile_screen.dart';
+import 'package:signio/unput_signature/input_signature.dart';
 
 const Color inActiveIconColor = Colors.white;
 
@@ -26,12 +27,10 @@ class _InitScreenState extends State<InitScreen> {
   }
 
   final pages = [
-    const GeneralHomeScreen(),
+    GeneralHomeScreen(),
     HistoryScreen(),
-    const Center(
-      child: Text("soon"),
-    ),
-     ProfileScreen()
+    InputSignature(),
+    ProfileScreen(),
   ];
 
   @override
@@ -81,20 +80,20 @@ class _InitScreenState extends State<InitScreen> {
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
+              "assets/icons/signature-svgrepo-com.svg",
               colorFilter: const ColorFilter.mode(
                 inActiveIconColor,
                 BlendMode.srcIn,
               ),
             ),
             activeIcon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
+              "assets/icons/signature-svgrepo-com.svg",
               colorFilter: const ColorFilter.mode(
                 kPrimaryColor,
                 BlendMode.srcIn,
               ),
             ),
-            label: "soon",
+            label: "Add Signature",
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(

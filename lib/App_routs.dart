@@ -16,6 +16,8 @@ abstract class Routes {
   static const ForgotPasswordScreen = _Paths.ForgotPasswordScreen;
   static const CollectScreen = _Paths.CollectScreen;
   static const CollcetSuccessfully = _Paths.CollcetSuccessfully;
+  static const InputSignature = _Paths.InputSignature;
+  static const CompleteProfileScreen = _Paths.CompleteProfileScreen;
 
 }
 
@@ -34,4 +36,6 @@ abstract class _Paths {
   static const CollectScreen = '/CollectScreen';
   static const InitScreen = '/InitScreen';
   static const CollcetSuccessfully = '/Collcet_successfully';
+  static const InputSignature = '/inputSegnature';
+  static const CompleteProfileScreen = '/complete_profile';
 }

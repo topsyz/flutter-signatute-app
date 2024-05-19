@@ -56,6 +56,10 @@ dependencies:
   tflite_flutter: ^0.10.4
   tflite_v2: ^1.0.0
   flutter_launcher_icons: ^0.13.1
+  signature: ^5.5.0
+  font_awesome_flutter: ^10.7.0
+  hand_signature: ^3.0.3
+  file_picker: ^8.0.3
 
 
 

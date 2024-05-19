@@ -1,7 +1,5 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:signio/models/intro_page_model.dart';
 import 'package:signio/screens/sign_in/sign_in_screen.dart';
 
@@ -55,17 +53,17 @@ class _IntropageState extends State<SplashScreen> {
               Row(
                 children: [
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: 20,
                       //color:Colors.green,
                       child: Row(
                         children: List.generate(3, (index) =>
-                            AnimatedContainer(duration: Duration(
+                            AnimatedContainer(duration: const Duration(
                               microseconds: 300,
                             ),
                               height: 10,
                               width:  index==indexValue? 60: 20,
-                              margin: EdgeInsets.only(right: 5),
+                              margin: const EdgeInsets.only(right: 5),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 color:index==indexValue? Colors.amber[900]
@@ -80,7 +78,7 @@ class _IntropageState extends State<SplashScreen> {
                     onPressed: () {
                       Navigator.pushNamed(context, SignInScreen.routeName);
                     },
-                    child: Text("skip",style:TextStyle(
+                    child: const Text("skip",style:TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
@@ -111,7 +109,7 @@ class _IntropageState extends State<SplashScreen> {
               ),
 
               //bottom area
-              Container(
+              SizedBox(
                 height: 100,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -120,7 +118,7 @@ class _IntropageState extends State<SplashScreen> {
                       GestureDetector (
                         onTap: (){
                           if(indexValue >0 ){
-                            pageController.previousPage(duration: Duration(
+                            pageController.previousPage(duration: const Duration(
                                 milliseconds: 300)
                               , curve: Curves.easeIn,);
                           }
@@ -133,7 +131,7 @@ class _IntropageState extends State<SplashScreen> {
                             color: Colors.amber[900],
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: Icon(Icons.arrow_back,color: Colors.white,
+                          child: const Icon(Icons.arrow_back,color: Colors.white,
                           ),
                         ),
                       ),
@@ -147,7 +145,7 @@ class _IntropageState extends State<SplashScreen> {
                         } else {
                           if (indexValue < 2) {
                             pageController.nextPage(
-                              duration: Duration(milliseconds: 300),
+                              duration: const Duration(milliseconds: 300),
                               curve: Curves.easeIn,
                             );
                           }
@@ -165,7 +163,7 @@ class _IntropageState extends State<SplashScreen> {
                         ),
                         child : indexValue == 00
                             ?
-                        Text("Start",style: TextStyle(
+                        const Text("Start",style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -200,12 +198,12 @@ class _IntropageState extends State<SplashScreen> {
           height: MediaQuery.of(context).size.height*.5,
           child: Image.asset("$imagePath"),
         ),
-        Text("$title",style: TextStyle(
+        Text("$title",style: const TextStyle(
             fontWeight:FontWeight.bold,
             fontSize: 20
         ),),
         Text("$description"
-          ,style: TextStyle(fontSize: 16,
+          ,style: const TextStyle(fontSize: 16,
             color: Colors.grey,),
 
         ),

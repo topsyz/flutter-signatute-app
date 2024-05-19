@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CollectScreenBanar extends StatelessWidget {
   const CollectScreenBanar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
 
   @override

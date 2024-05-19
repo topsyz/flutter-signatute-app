@@ -7,7 +7,7 @@ import 'package:tflite_v2/tflite_v2.dart';
 
 class CollectScreen extends StatefulWidget {
   static String routeName = "/CollectScreen";
-  const CollectScreen({Key? key}) : super(key: key);
+  const CollectScreen({super.key});
 
   @override
   _CollectScreenState createState() => _CollectScreenState();
@@ -52,12 +52,12 @@ class _CollectScreenState extends State<CollectScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Collect cheque",
           style: TextStyle(fontSize: 20), // Adjust the font size here
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -66,14 +66,14 @@ class _CollectScreenState extends State<CollectScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CollectScreenHeader(),
-          CollectScreenBanner(), // Add the banner widget here
+          const CollectScreenHeader(),
+          const CollectScreenBanner(), // Add the banner widget here
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search for the signatory",
-                prefixIcon: Icon(Icons.search),
+                prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -90,7 +90,7 @@ class _CollectScreenState extends State<CollectScreen> {
                 )
                     : Container(
                   margin: const EdgeInsets.all(10),
-                  child: Opacity(
+                  child: const Opacity(
                     opacity: 0.8,
                     child: Center(
                       child: Text("No image selected"),
@@ -103,10 +103,10 @@ class _CollectScreenState extends State<CollectScreen> {
                         ? _results.map((result) {
                       return Card(
                         child: Container(
-                          margin: EdgeInsets.all(10),
+                          margin: const EdgeInsets.all(10),
                           child: Text(
                             "${result['label']} - ${result['confidence'].toStringAsFixed(2)}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.red,
                               fontSize: 20,
                             ),
@@ -133,12 +133,12 @@ class _CollectScreenState extends State<CollectScreen> {
               onPressed: () {
                 Navigator.pushNamed(context, CollcetSuccessfully.routeName);
               },
-              child: Text("collect the Cheque"),
+              child: const Text("collect the Cheque"),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: pickImage,
-              child: Text("Pick Cheque Image"),
+              child: const Text("Pick Cheque Image"),
             ),
           ],
         ),
@@ -147,8 +147,8 @@ class _CollectScreenState extends State<CollectScreen> {
   }
 
   Future pickImage() async {
-    final ImagePicker _picker = ImagePicker();
-    final XFile? pickedFile = await _picker.pickImage(
+    final ImagePicker picker = ImagePicker();
+    final XFile? pickedFile = await picker.pickImage(
       source: ImageSource.gallery,
     );
     if (pickedFile != null) {
@@ -160,8 +160,8 @@ class _CollectScreenState extends State<CollectScreen> {
 
 class CollectScreenBanner extends StatelessWidget {
   const CollectScreenBanner({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -176,7 +176,7 @@ class CollectScreenBanner extends StatelessWidget {
         color: const Color(0xFFFF6F00),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Text.rich(
+      child: const Text.rich(
         TextSpan(
           style: TextStyle(color: Colors.white),
           children: [

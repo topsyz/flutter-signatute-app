@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:signio/SCREENS/collect_success/collect_success.dart';
+import 'package:signio/SCREENS/complete_profile/complete_profile_screen.dart';
 import 'package:signio/SCREENS/forgot_password/forgot_password_screen.dart';
 import 'package:signio/SCREENS/login_success/login_success_screen.dart';
 import 'package:signio/SCREENS/sign_in/sign_in_screen.dart';
@@ -14,6 +15,7 @@ import 'package:signio/general_home_page/general_home.dart';
 import 'package:signio/history/History_screen.dart';
 import 'package:signio/init_screen.dart';
 import 'package:signio/profile/profile_screen.dart';
+import 'package:signio/unput_signature/input_signature.dart';
 part 'App_routs.dart';
 class AppPages {
   AppPages._();
@@ -44,12 +46,17 @@ class AppPages {
     GetPage(name: LoginSuccessScreen.routeName,
         page: () => const LoginSuccessScreen()),
     GetPage(name: HistoryScreen.routeName,
-        page: () => HistoryScreen()),
+        page: () => HistoryScreen(),
+    ),
     GetPage(name: ForgotPasswordScreen.routeName,
         page: () => const ForgotPasswordScreen()),
     GetPage(name: CollectScreen.routeName,
         page: () => const CollectScreen()),
     GetPage(name: CollcetSuccessfully.routeName,
         page: () => const CollcetSuccessfully()),
+    GetPage(name: InputSignature.routeName,
+        page: () => const InputSignature()),
+    GetPage(name: CompleteProfileScreen.routeName,
+        page: () => const CompleteProfileScreen()),
   ];
 }

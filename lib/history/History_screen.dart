@@ -20,11 +20,13 @@ class HistoryScreen extends StatelessWidget {
     // Add more transactions here...
   ];
 
+   HistoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bank Transaction History'),
+        title: const Text('Bank Transaction History'),
       ),
       body: ListView.builder(
         itemCount: transactions.length,

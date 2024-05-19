@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:signio/SCREENS/sign_in/sign_in_screen.dart';
 
 import '../constants.dart';
-import '../screens/sign_up/sign_up_screen.dart';
 
 class AlreadyMemberText extends StatelessWidget {
   const AlreadyMemberText({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

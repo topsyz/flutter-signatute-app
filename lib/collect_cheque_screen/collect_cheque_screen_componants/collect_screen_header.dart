@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CollectScreenHeader extends StatelessWidget {
   const CollectScreenHeader({
-    Key? key,
+    super.key,
     this.userName = "helmy helal",
-  }) : super(key: key);
+  });
 
   final String userName;
 
@@ -17,7 +17,7 @@ class CollectScreenHeader extends StatelessWidget {
         children: [
           Text(
             "Good Evening, $userName",
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
