@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:signio/models/intro_page_model.dart';
 import 'package:signio/screens/sign_in/sign_in_screen.dart';
-
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splashScreen";
   const SplashScreen({super.key});
@@ -15,7 +13,7 @@ class _IntropageState extends State<SplashScreen> {
   List<IntroPageModel> intropages=[
     IntroPageModel(
       title: "Online banking system",
-      description: "Do all your banking transactions online !",
+      description: "Do all your banking transactions            online !",
       imagePath :"assets/images/splash2.png",
     ),
     IntroPageModel(
